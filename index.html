@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <title>Locutio</title>
+</head>
+
+<body>
+    <main class="app container">
+        <header class="header">
+
+            <picture class="header__logo">
+
+            </picture>
+            <h1>Locutio</h1>
+        </header>
+        <div class="timeline__container">
+            <header class="section-header">Timeline</header>
+            <section id="timeline" class="timeline__messages">
+
+            </section>
+        </div>
+        <aside class="lists">
+            <section class="lists__container">
+                <header class="section-header">Following</header>
+                <ul id="followingList" class="lists__users lists__following">
+
+                </ul>
+            </section>
+            <section class="lists__container">
+                <header class="section-header">Who to follow</header>
+                <ul id="noFollowingList" class="lists__users lists__notfollowing">
+
+                </ul>
+            </section>
+        </aside>
+        <footer class="message">
+            <form id="messagePublishForm" class="message__form" action="/publish" method="POST">
+                <textarea class="message__box" name="content" id="content" placeholder="Insert your intelligent quote"
+                    cols="80" rows="10" maxlength="100" required></textarea>
+                <button class="btn message__button">Send</button>
+            </form>
+        </footer>
+    </main>
+
+</body>
+
+</html>
