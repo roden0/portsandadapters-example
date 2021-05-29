@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "docs": "jsdoc --readme ./docs/DOC.md ./src/**/*.js",
+    "docs": "jsdoc --readme ./docs/DOC.md ./src/**/*.js -d ./docs/",
     "start": "snowpack dev",
     "build": "snowpack build",
     "styles:dev": "sass --watch ./styles/sass/main.scss ./styles/css/styles.css",
