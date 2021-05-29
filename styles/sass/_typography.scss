@@ -1,0 +1,33 @@
+@use "abstracts" as *;
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark;
+}
+
+.section-header {
+  color: $color-dark;
+  font-size: 1.5rem;
+}
+
+.lists {
+  &__item {
+    &__name {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.timeline {
+  &__message {
+    &__name {
+      font-size: 1.3rem;
+    }
+    &__content {
+      color: $color-dark;
+      font-size: 1.3rem;
+    }
+  }
+}

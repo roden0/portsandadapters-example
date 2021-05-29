@@ -1,0 +1,37 @@
+//variables
+$color-primary: #55c57a;
+$color-primary-light: lighten($color-primary, 15%);
+$color-primary-dark: darken($color-primary, 15%);
+
+$color-secondary: #f73;
+$color-secondary-light: lighten($color-secondary, 15%);
+$color-secondary-dark: darken($color-secondary, 15%);
+
+$color-tertiary: #54f;
+$color-tertiary-light: lighten($color-tertiary, 15%);
+$color-tertiary-dark: darken($color-tertiary, 15%);
+
+$color-grey-light: #f7f7f7;
+$color-grey-mid: #eee;
+$color-grey-dark: #777;
+$color-dark: #333;
+$color-white: #fff;
+$color-black: #000;
+
+$default-font-size: 1.5rem;
+$header-primary-size: 6rem;
+$header-primary-sub-size: 2rem;
+$header-secondary-size: 3.5rem;
+$header-tertiary-size: 1.7rem;
+
+$header-primary-bold: 400;
+$header-primary-sub-bold: 700;
+
+//mixins
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

@@ -1,0 +1,51 @@
+//input
+textarea {
+  border: thin solid #ccc;
+  &:focus:invalid {
+    outline: none;
+    border-color: #900;
+    background-color: #fdd;
+  }
+}
+
+//buttons
+.btn {
+  display: block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0.3rem 1.3rem;
+  border-radius: 1rem;
+}
+
+//lists
+.lists {
+  &__item {
+    &.selected {
+      background-color: #f4f4f4;
+    }
+  }
+}
+
+//timeline
+.timeline {
+  &__message {
+    &.own {
+      background-color: #f4f4f4;
+    }
+    &.hidden {
+      display: none;
+    }
+  }
+}
+
+//footer
+.message {
+  &__box {
+    resize: none;
+  }
+
+  &__button {
+    font-size: 2rem;
+  }
+}
