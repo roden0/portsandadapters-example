@@ -1,10 +1,12 @@
+@use "abstract" as *;
+
 //input
 textarea {
-  border: thin solid #ccc;
+  border: thin solid $color-grey-mid;
   &:focus:invalid {
     outline: none;
-    border-color: #900;
-    background-color: #fdd;
+    border-color: $color-red;
+    background-color: $color-red-light;
   }
 }
 
@@ -22,7 +24,7 @@ textarea {
 .lists {
   &__item {
     &.selected {
-      background-color: #f4f4f4;
+      background-color: $color-grey-light;
     }
   }
 }
@@ -31,7 +33,7 @@ textarea {
 .timeline {
   &__message {
     &.own {
-      background-color: #f4f4f4;
+      background-color: $color-grey-light;
     }
     &.hidden {
       display: none;

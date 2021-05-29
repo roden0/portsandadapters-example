@@ -1,0 +1,28 @@
+{
+  "name": "portsandadapters",
+  "description": "An approach to Ports and Adapters clean architecture from the frameworkless client application perspective",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "styles:dev": "sass --watch ./styles/sass/main.scss ./styles/css/styles.css",
+    "styles": "sass --style=compressed ./styles/sass/main.scss ./styles/css/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "sass": "^1.34.0",
+    "snowpack": "^3.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roden0/portsandadapters-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roden0/portsandadapters-example/issues"
+  },
+  "homepage": "https://github.com/roden0/portsandadapters-example#readme"
+}

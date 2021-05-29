@@ -1,3 +1,5 @@
+@use "abstract" as *;
+
 //grid
 .container {
   margin: 1rem 1rem 0;
@@ -38,7 +40,7 @@
   }
   &__users {
     list-style: none;
-    border: thin solid #000;
+    border: thin solid $color-black;
     height: 100%;
     overflow: auto;
   }
@@ -46,7 +48,7 @@
   &__item {
     display: flex;
     justify-content: space-between;
-    border: thin solid #000;
+    border: thin solid $color-black;
     padding: 0.5rem;
     margin: 0.3rem;
   }

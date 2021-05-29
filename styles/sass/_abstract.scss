@@ -18,6 +18,9 @@ $color-dark: #333;
 $color-white: #fff;
 $color-black: #000;
 
+$color-red: #900;
+$color-red-light: lighten($color-red, 20%);
+
 $default-font-size: 1.5rem;
 $header-primary-size: 6rem;
 $header-primary-sub-size: 2rem;
