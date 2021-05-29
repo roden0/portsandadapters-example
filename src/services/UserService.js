@@ -1,23 +1,47 @@
-// import user repo
 import UserRepository from "../infra/UserRepository";
-// import message repo
+import MessageRepository from "../infra/MessageRepository";
 
-// import user presenter
-// import message presenter
-
+/**
+ * Class represents service for users
+ */
 class UserService {
+  /**
+   * build service and create own repo instance
+   */
   constructor() {
-    // this repo
+    this.userRepo = new UserRepository();
     // this presenter
   }
 
-  // create user
+  /**
+   * create a user
+   * @param {object} constructor
+   */
+  createUser(constructor) {
+    const user = this.userRepo.create(constructor);
+    // render user
+  }
 
-  // follow
+  /**
+   * toggle follow user status
+   * @param {object} user
+   * @param {string} action
+   */
+  toggleFollow(user, action) {
+    if (action === "follow") {
+      this.userRepo.followUser(user);
+    } else {
+      this.userRepo.unFollowUser(user);
+    }
+  }
 
-  // unfollow
-
-  // filter messages by user
+  /**
+   * filter messages by user name
+   * @param {object} param0
+   */
+  filterMessages({ name }) {
+    const selected = this.userRepo.selectUser(name);
+  }
 }
 
 const instanceService = new UserService();

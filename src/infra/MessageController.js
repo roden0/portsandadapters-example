@@ -2,9 +2,17 @@
 import instanceService from "../services/MessageService";
 
 // class with static methods
+/**
+ * Class represents a controller for messages
+ */
 class MessageController {
   // message creation
-  // message sent
+
+  /**
+   * method bound for message form submit
+   * @param {Event} ev
+   * @returns Event
+   */
   static onMessageSend(ev) {
     console.group("Message Controller");
 
@@ -18,6 +26,7 @@ class MessageController {
     }
 
     console.groupEnd();
+    return ev;
   }
 }
 
