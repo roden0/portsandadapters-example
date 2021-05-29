@@ -1,15 +1,17 @@
+@use "sass:color";
+
 //variables
 $color-primary: #55c57a;
-$color-primary-light: lighten($color-primary, 15%);
-$color-primary-dark: darken($color-primary, 15%);
+$color-primary-light: color.scale($color-primary, $lightness: 50%);
+$color-primary-dark: color.scale($color-primary, $lightness: -50%);
 
 $color-secondary: #f73;
-$color-secondary-light: lighten($color-secondary, 15%);
-$color-secondary-dark: darken($color-secondary, 15%);
+$color-secondary-light: color.scale($color-secondary, $lightness: 50%);
+$color-secondary-dark: color.scale($color-secondary, $lightness: -50%);
 
 $color-tertiary: #54f;
-$color-tertiary-light: lighten($color-tertiary, 15%);
-$color-tertiary-dark: darken($color-tertiary, 15%);
+$color-tertiary-light: color.scale($color-tertiary, $lightness: 50%);
+$color-tertiary-dark: color.scale($color-tertiary, $lightness: -50%);
 
 $color-grey-light: #f7f7f7;
 $color-grey-mid: #eee;
@@ -19,7 +21,7 @@ $color-white: #fff;
 $color-black: #000;
 
 $color-red: #900;
-$color-red-light: lighten($color-red, 20%);
+$color-red-light: color.scale($color-red, $lightness: 90%);
 
 $default-font-size: 1.5rem;
 $header-primary-size: 6rem;
