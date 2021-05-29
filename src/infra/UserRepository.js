@@ -10,9 +10,9 @@ class UserRepository {
   }
 
   /**
-   *
+   * select a user
    * @param {string} name
-   * @returns
+   * @returns {string|null}
    */
   selectUser(name) {
     let ret = null;
@@ -23,7 +23,7 @@ class UserRepository {
   /**
    * create user
    * @param {object} user
-   * @returns
+   * @returns {object}
    */
   create(user) {
     const userInstance = new User(user);
